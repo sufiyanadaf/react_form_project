@@ -1,0 +1,32 @@
+<div id="box">
+    <br>
+    <h3 id="registration">Registration Form</h3>
+    <br>
+<form [formGroup]="registrationForm">
+<label>First name:</label><br>
+<input type="text" formControlName="firstname">
+<p *ngIf="firstname.touched && firstname.invalid">Please enter First name</p>
+<br>
+<label> Last name:</label><br>
+<input type="text" formControlName="lastname" >
+<p *ngIf="lastname.touched && lastname.invalid">Please Last name</p>
+<br>
+<label> E-mail:</label><br>
+<input type="email" formControlName="email">
+<p *ngIf="email.touched && email.invalid">Please enter E-mail</p>
+<br>
+<label> Password:</label><br>
+<input type="password" formControlName="password">
+<p *ngIf="password.touched && password.invalid">Please enter Password</p>
+<br>
+<label> Confirm password :</label><br>
+<input type="password" formControlName="confirm_password">
+<p *ngIf="confirm_password.touched && confirm_password.invalid">Please Confirm password</p>
+<br>
+<label> Phone number:</label><br>
+<input type="text" formControlName="phone_number">
+<p *ngIf="phone_number.touched && phone_number.invalid">Please enter Phone number</p>
+<br><br>
+<button type="submit" (click)= "SubmitForm()" style="width: 100px; height :30px">Submit</button>
+</form>
+</div>

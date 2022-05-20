@@ -1,0 +1,23 @@
+#box{
+    margin-left: 80px;
+    border: 2px solid black;
+    width: 400px;
+    height: 560px;
+    padding-left: 38px;
+    margin-top: 20px;
+}
+#registration{
+    text-decoration: underline;
+}
+input{
+    width: 250px;
+}
+label{
+    font-size: 18px;
+}
+
+input.ng-touched.ng-invalid{
+    border: 2px solid red
+ }
+
+ 
